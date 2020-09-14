@@ -39,9 +39,9 @@ public class Karakter {
 		
 		
 		else {
-			while (karakter<0 && karakter>100) {
-				i++;
+			if (karakter>100 || karakter<0) {
 				karakter = Integer.parseInt (karTxt);
+			  i=i-1; 
 			}
 	
 		showMessageDialog(null, karakter + " er en ugyldig poengsum, skriv inn på nytt.");
